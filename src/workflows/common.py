@@ -18,7 +18,7 @@ from src.common.emr import (
 @DBOS.workflow()
 async def run_emr_job(run_time: datetime, context: dict[str, Any]) -> JobRunStateType:
     parsed_context: JobContext = JobContext(**context)
-    session = aioboto3.Session()
+    session: aioboto3.Session = aioboto3.Session()
     async with session.client(
         "emr-serverless", region_name=settings.aws_region
     ) as emr_client:

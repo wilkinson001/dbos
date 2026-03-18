@@ -1,5 +1,5 @@
 from dbos import ScheduleInput
-from common.workflows import run_emr_job
+from workflows.common import run_emr_job
 from models.job import JobContext, JobParams
 
 

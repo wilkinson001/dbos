@@ -1,7 +1,7 @@
 import threading
 from dbos import DBOS, DBOSConfig
-from src.common.settings import settings
-from src.workflows import WORKFLOWS
+from common.settings import settings
+from workflows import WORKFLOWS
 
 
 if __name__ == "__main__":
